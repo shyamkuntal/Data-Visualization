@@ -1,0 +1,56 @@
+.App h1{
+  text-align: center;
+}
+
+.chartRef {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  max-width: calc(45% - 30px);
+  width: 100%;
+  height: 400px;
+  margin: 10px;
+  position: relative;
+}
+
+.chart {
+  display: flex;  
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 10px;
+  max-width: 1300px;
+  width: 100%;
+  margin: 20px auto;
+}
+
+canvas {
+  max-width: 100% !important;
+  width: 100% !important;
+  width: 900px;
+  height: 100% !important;
+}
+
+ /* Media Queries */
+@media only screen and (max-width: 980px) {
+  .chartRef{
+    max-width: 100%;
+    width: 100%;
+  }
+  .chartRef div  {
+    position: relative !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+  
+}
+
+@media screen and (max-width: 680px) {
+  .chartRef {
+    height: 250px;
+  }
+  .chartRef div  {
+    position: relative !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+  
+}
